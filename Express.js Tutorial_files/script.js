@@ -1,0 +1,1 @@
+jQuery(document).ready(function() {	if (jQuery('.comment-form-url')) jQuery('#url').val(''); });

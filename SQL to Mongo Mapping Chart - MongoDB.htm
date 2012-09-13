@@ -1,0 +1,1347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0066)http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <title>SQL to Mongo Mapping Chart - MongoDB</title>
+    
+        
+        
+        
+        
+        
+
+                        
+    
+    
+            
+<meta id="confluence-context-path" name="confluence-context-path" content="">
+<meta id="atlassian-token" name="atlassian-token" content="49Xk1BBaID">
+<meta id="confluence-space-key" name="confluence-space-key" content="DOCS">
+
+<script type="text/javascript">
+    // Deprecated global variables. To be removed in a future version of Confluence.
+    var contextPath = '';
+    var i18n = [];
+</script>
+
+    
+
+<!-- include system resources -->
+<link type="text/css" rel="stylesheet" href="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.web.resources-master-styles.css" media="all">
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" href="/s/1627/3/1.0/_/download/batch/confluence.web.resources:master-styles/confluence.web.resources:master-styles.css?ieonly=true" media="all"/>
+<![endif]-->
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/com.atlassian.auiplugin-jquery.js"></script>
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/com.atlassian.auiplugin-jquery-base.js"></script>
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/com.atlassian.auiplugin-ajs.js"></script>
+<link type="text/css" rel="stylesheet" href="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.macros.profile-network-resources-css.css" media="all">
+<link type="text/css" rel="stylesheet" href="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.macros.profile-profile-macro-styles.css" media="all">
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" href="/s/1627/3/1.0/_/download/batch/confluence.macros.profile:profile-macro-styles/confluence.macros.profile:profile-macro-styles.css?ieonly=true" media="all"/>
+<![endif]-->
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.macros.profile-profile-macro-styles.js"></script>
+<link type="text/css" rel="stylesheet" href="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.macros.advanced-recently-updated-sidebar-resources.css" media="all">
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/com.atlassian.confluence.extra.officeconnector-editinoffice.js"></script>
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.web.resources-image-effects.js"></script>
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/com.atlassian.confluence.plugins.pagetree-pagetree-resources.js"></script>
+<link type="text/css" rel="stylesheet" href="./SQL to Mongo Mapping Chart - MongoDB_files/com.atlassian.confluence.plugins.pagetree-pagetree-resources.css" media="all">
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.web.resources-prototype.js"></script>
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.web.resources-scriptaculous.js"></script>
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/engine.js"></script>
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/util.js"></script>
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/AddLabeltoEntity.js"></script>
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/RemoveLabelFromEntity.js"></script>
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/SuggestedLabelsForEntity.js"></script>
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/GenerateAutocompleteLabelsListForEntity.js"></script>
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.web.resources-labels-editor.js"></script>
+<link type="text/css" rel="stylesheet" href="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.web.resources-labels-editor.css" media="all">
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.web.resources-animation.js"></script>
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.web.resources-comments.js"></script>
+<link type="text/css" rel="stylesheet" href="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.web.resources-comments.css" media="all">
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" href="/s/1627/3/1.0/_/download/batch/confluence.web.resources:comments/confluence.web.resources:comments.css?ieonly=true" media="all"/>
+<![endif]-->
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.web.resources-breadcrumbs.js"></script>
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.web.resources-master-scripts.js"></script>
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/PageNotification.js"></script>
+<link type="text/css" rel="stylesheet" href="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.web.resources-print-styles.css" media="print">
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.web.resources-safe-ajax.js"></script>
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/com.atlassian.auiplugin-dialog.js"></script>
+<link type="text/css" rel="stylesheet" href="./SQL to Mongo Mapping Chart - MongoDB_files/com.atlassian.auiplugin-dialog.css" media="all">
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" href="/s/1627/3/1.0.2/_/download/batch/com.atlassian.auiplugin:dialog/com.atlassian.auiplugin:dialog.css?ieonly=true" media="all"/>
+<![endif]-->
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.userstatus-userstatus-resources.js"></script>
+<link type="text/css" rel="stylesheet" href="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.userstatus-userstatus-resources.css" media="all">
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.web.resources-contentnamesearch.js"></script>
+<link type="text/css" rel="stylesheet" href="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.web.resources-contentnamesearch.css" media="all">
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.web.resources-userlink.js"></script>
+<link type="text/css" rel="stylesheet" href="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.web.resources-userlink.css" media="all">
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" href="/s/1627/3/1.0/_/download/batch/confluence.web.resources:userlink/confluence.web.resources:userlink.css?ieonly=true" media="all"/>
+<![endif]-->
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/com.atlassian.auiplugin-drop-down.js"></script>
+<link type="text/css" rel="stylesheet" href="./SQL to Mongo Mapping Chart - MongoDB_files/com.atlassian.auiplugin-drop-down.css" media="all">
+<script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/confluence.web.resources-atlassian-effects.js"></script>
+
+<!-- end system resources -->
+
+    <link rel="stylesheet" href="./SQL to Mongo Mapping Chart - MongoDB_files/combined.css" type="text/css">
+
+    <meta name="confluence-request-time" content="1347536944757">
+
+    <link rel="shortcut icon" href="http://ru.wiki.mongodb.org/favicon.ico">
+    <link rel="icon" type="image/png" href="http://ru.wiki.mongodb.org/s/1627/3/_/images/logo/confluence_16.png">
+
+<link rel="search" type="application/opensearchdescription+xml" href="http://ru.wiki.mongodb.org/opensearch/osd.action" title="10gen Confluence">
+
+
+        
+    
+    <script src="./SQL to Mongo Mapping Chart - MongoDB_files/munchkin.js" type="text/javascript"></script><script type="text/javascript" async="" src="./SQL to Mongo Mapping Chart - MongoDB_files/jquery-latest.min.js"></script>
+    <script>mktoMunchkin("017-HGS-593");</script>
+
+    
+    <link rel="shortcut icon" href="http://media.mongodb.org/favicon.ico">  
+    <!-- ClickTale Top part -->
+    <script type="text/javascript">
+    var WRInitTime=(new Date()).getTime();
+    </script>
+<meta http-equiv="Content-Language" content="ru-RU">
+
+<meta property="og:locale" content="ru_RU">
+<style id="wrc-middle-css" type="text/css">.wrc_whole_window{	display: none;	position: fixed; 	z-index: 2147483647;	background-color: rgba(40, 40, 40, 0.9);	word-spacing: normal !important;	margin: 0px !important;	padding: 0px !important;	border: 0px !important;	left: 0px;	top: 0px;	width: 100%;	height: 100%;	line-height: normal !important;	letter-spacing: normal !important;	overflow: hidden;}.wrc_bar_window{	display: none;	position: fixed; 	z-index: 2147483647;	background-color: rgba(60, 60, 60, 1.0);	word-spacing: normal !important;	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	margin: 0px !important;	padding: 0px !important;	border: 0px !important;	left: 0px;	top: 0px;	width: 100%;	height: 40px;	line-height: normal !important;	letter-spacing: normal !important;	color: white !important;	font-size: 13px !important;}.wrc_middle {	display: table-cell;	vertical-align: middle;	width: 100%;}.wrc_middle_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 14px;	width: 600px;	height: auto;    background: url(chrome-extension://icmlaeflemplmjndnaapfdbbnpncnbda/skin/images/background-body.jpg) repeat-x left top;	background-color: rgb(39, 53, 62);	position: relative;	margin-left: auto;	margin-right: auto;	text-align: left;}.wrc_middle_tq_main {	font-family: Segoe UI, Arial Unicode MS, Arial, Sans-Serif;	font-size: 16px;	width: 615px;	height: 460px;    background: url(chrome-extension://icmlaeflemplmjndnaapfdbbnpncnbda/skin/images/background-sitecorrect.png) no-repeat;	background-color: white;	color: black !important;	position: relative;	margin-left: auto;	margin-right: auto;	text-align: center;}.wrc_middle_logo {    background: url(chrome-extension://icmlaeflemplmjndnaapfdbbnpncnbda/skin/images/logo.jpg) no-repeat left bottom;    width: 140px;    height: 42px;    color: orange;    display: table-cell;    text-align: right;    vertical-align: middle;}.wrc_icon_warning {	margin: 20px 10px 20px 15px;	float: left;	background-color: transparent;}.wrc_middle_title {    color: #b6bec7;	height: auto;    margin: 0px auto;	font-size: 2.2em;	white-space: nowrap;	text-align: center;}.wrc_middle_hline {    height: 2px;	width: 100%;    display: block;}.wrc_middle_description {	text-align: center;	margin: 15px;	font-size: 1.4em;	padding: 20px;	height: auto;	color: white;	min-height: 3.5em;}.wrc_middle_actions_main_div {	margin-bottom: 15px;	text-align: center;}.wrc_middle_actions_blue_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white;	font-size: 1.2em;	font-weight: bold;}.wrc_middle_actions_blue_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(0, 173, 223) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #00dddd;	padding: 0px 20px 0px 20px;}.wrc_middle_actions_blue_button:hover {	background-color: rgb(0, 159, 212) !important;}.wrc_middle_actions_blue_button:active {	background-color: rgb(0, 146, 200) !important;	border: 2px solid #00aaaa;}.wrc_middle_actions_grey_button div {	display: inline-block;	width: auto;	cursor: Pointer;	margin: 3px 10px 3px 10px;	color: white !important;	font-size: 15px;	font-weight: bold;}.wrc_middle_actions_grey_button {	-moz-appearance: none;	border-radius: 7px;	-moz-border-radius: 7px/7px;	border-radius: 7px/7px;	background-color: rgb(100, 100, 100) !important;	display: inline-block;	width: auto;	cursor: Pointer;	border: 2px solid #aaaaaa;	text-decoration: none;	padding: 0px 20px 0px 20px;}.wrc_middle_actions_grey_button:hover {	background-color: rgb(120, 120, 120) !important;}.wrc_middle_actions_grey_button:active {	background-color: rgb(130, 130, 130) !important;	border: 2px solid #00aaaa;}.wrc_middle_action_low {	font-size: 0.9em;	white-space: nowrap;	cursor: Pointer;	color: grey !important;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action_low:hover {	color: #aa4400 !important;}.wrc_middle_actions_rest_div {	padding-top: 5px;	white-space: nowrap;	text-align: center;}.wrc_middle_action {	white-space: nowrap;	cursor: Pointer;	color: red !important;	font-size: 1.2em;	margin: 10px 10px 0px 10px;	text-decoration: none;}.wrc_middle_action:hover {	color: #aa4400 !important;}</style><script id="wrc-script-middle_window" type="text/javascript" language="JavaScript">var g_inputsCnt = 0;var g_InputThis = new Array(null, null, null, null);var g_alerted = false;/* we test the input if it includes 4 digits   (input is a part of 4 inputs for filling the credit-card number)*/function is4DigitsCardNumber(val){	var regExp = new RegExp('[0-9]{4}');	return (val.length == 4 && val.search(regExp) == 0);}/* testing the whole credit-card number 19 digits devided by three '-' symbols or   exactly 16 digits without any dividers*/function isCreditCardNumber(val){	if(val.length == 19)	{		var regExp = new RegExp('[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}');		return (val.search(regExp) == 0);	}	else if(val.length == 16)	{		var regExp = new RegExp('[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}');		return (val.search(regExp) == 0);	}	return false;}function CheckInputOnCreditNumber(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'text')	{		if(is4DigitsCardNumber(value))		{			var cont = true;			for(i = 0; i < g_inputsCnt; i++)				if(g_InputThis[i] == self)					cont = false;			if(cont && g_inputsCnt < 4)			{				g_InputThis[g_inputsCnt] = self;				g_inputsCnt++;			}		}		g_alerted = (g_inputsCnt == 4);		if(g_alerted)			g_inputsCnt = 0;		else			g_alerted = isCreditCardNumber(value);	}	return g_alerted;}function CheckInputOnPassword(self){	if(g_alerted)		return false;	var value = self.value;	if(self.type == 'password')	{		g_alerted = (value.length > 0);	}	return g_alerted;}function onInputBlur(self, bRatingOk, bFishingSite){	var bCreditNumber = CheckInputOnCreditNumber(self);	var bPassword = CheckInputOnPassword(self);	if((!bRatingOk || bFishingSite == 1) && (bCreditNumber || bPassword) )	{		var warnDiv = document.getElementById("wrcinputdiv");		if(warnDiv)		{			/* show the warning div in the middle of the screen */			warnDiv.style.left = "0px";			warnDiv.style.top = "0px";			warnDiv.style.width = "100%";			warnDiv.style.height = "100%";			document.getElementById("wrc_warn_fs").style.display = 'none';			document.getElementById("wrc_warn_cn").style.display = 'none';			if(bFishingSite)				document.getElementById("wrc_warn_fs").style.display = 'block';			else				document.getElementById("wrc_warn_cn").style.display = 'block';			warnDiv.style.display = 'table';		}	}}</script></head>
+
+            <body class="smartling-ru" onload="placeFocus()" id="com-atlassian-confluence">
+    
+
+
+    <script type="text/javascript">
+        AJS.toInit(function ($) {
+            $(".message-close-button").each(function () {
+                var li = $(this).parent();
+                var cookieId = this.alt;
+                $(this).click(function () {
+                    li.slideUp();
+                    setCookie(cookieId, true);
+                });
+            });
+
+            $("#messageContainer .confluence-messages").each(function () {
+                if (!getCookie(this.id)) {
+                    $(this).show();
+                }
+            })
+        });
+    </script>
+
+        
+  <script type="text/javascript">
+     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js'      type='text/javascript'%3E%3C/script%3E"));
+    </script><script src="./SQL to Mongo Mapping Chart - MongoDB_files/ga.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-7301842-1");
+    pageTracker._trackPageview();
+   } catch(err) {}</script>
+
+
+  <div id="top-right">
+    <div class="user-right">
+    <ul id="header-menu-bar" class="ajs-menu-bar">
+                    
+        
+            <li class="normal ajs-menu-item">
+        <a id="browse-menu-link" class="browse trigger ajs-menu-title" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#"><span><span>Меню</span></span></a>         <div class="ajs-drop-down hidden" hidden="" style="">
+                        <ul id="browse-menu-link-leading" class="section-leading first">
+                                        <li>
+    
+    <a id="space-pages-link" href="http://ru.wiki.mongodb.org/pages/listpages.action?key=DOCS" class="">
+                   <span>Страницы</span>            </a>
+</li>
+                                        <li>
+    
+    <a id="space-blogposts-link" href="http://ru.wiki.mongodb.org/pages/viewrecentblogposts.action?key=DOCS" class="">
+                   <span>Новости</span>            </a>
+</li>
+                                        <li>
+    
+    <a id="space-labels-link" href="http://ru.wiki.mongodb.org/labels/listlabels-heatmap.action?key=DOCS" class="">
+                   <span>Теги</span>            </a>
+</li>
+                                        <li>
+    
+    <a id="space-attachments-link" href="http://ru.wiki.mongodb.org/spaces/listattachmentsforspace.action?key=DOCS" class="">
+                   <span>Вложения</span>            </a>
+</li>
+                                        <li>
+    
+    <a href="http://ru.wiki.mongodb.org/spaces/space-bookmarks.action?spaceKey=DOCS" class="">
+                   <span>Закладки</span>            </a>
+</li>
+                                        <li>
+    
+    <a id="space-mail-link" href="http://ru.wiki.mongodb.org/spaces/viewmailarchive.action?key=DOCS" class="">
+                   <span>Почта</span>            </a>
+</li>
+                                        <li>
+    
+    <a id="space-advanced-link" href="http://ru.wiki.mongodb.org/spaces/viewspacesummary.action?key=DOCS" class="">
+                   <span>Дополнительно</span>            </a>
+</li>
+                            </ul>
+                    </div>
+    </li>
+        
+                                                         <li class="ajs-menu-item normal">
+    
+    <a id="login-link" href="http://ru.wiki.mongodb.org/login.action?os_destination=%2Fdisplay%2FDOCS%2FSQL%2Bto%2BMongo%2BMapping%2BChart" class="user-item login-link">
+                   <span>Вход</span>            </a>
+</li>
+                            </ul>
+    </div>
+  </div>
+  
+
+      <div class="search-db">
+
+      <form id="quick-search" class="quick-search" method="get" action="http://ru.wiki.mongodb.org/dosearchsite.action"> 
+                <fieldset> 
+            <legend>Быстрый поиск</legend> 
+            <input class="quick-search-query" id="quick-search-query" type="search" accesskey="q" autocomplete="off" name="queryString" size="25" results="10" placeholder="search"> 
+            <input type="hidden" name="where" value="DOCS"> 
+
+            <input class="quick-search-submit" id="quick-search-submit" type="submit" value="Search"> 
+        </fieldset> 
+        <fieldset class="hidden parameters"> 
+            <input type="hidden" class="quickSearchPlaceholder" id="quickSearchPlaceholder" value="Search"> 
+ 
+            <input type="hidden" id="quickNavEnabled" value="true"> 
+
+             <!-- Quick nav disabled. SettingsManager could not be found -->         </fieldset> 
+    </form> 
+
+
+      </div>  
+
+
+  <div id="header-db" class="spread">
+    <div class="split">
+    	<div id="logo">
+    		<div><a href="http://ru.wiki.mongodb.org/"><img src="./SQL to Mongo Mapping Chart - MongoDB_files/logo-mongoDB.png" width="217" height="90" alt="mongoDB"></a></div>
+    	</div>
+    	<div id="nav">
+    	</div>
+    </div>
+  </div>
+
+  <div id="breadcrumbsback" class="spread">
+    <div class="split">
+
+    
+    <ol id="breadcrumbs">
+                                                
+            <li><span>
+                                                    <a href="http://ru.wiki.mongodb.org/display/DOCS">MongoDB</a>
+                        </span></li>
+                                            
+            <li><span>
+                                                    <a href="http://ru.wiki.mongodb.org/display/DOCS/Home">Главная</a>
+                        </span></li>
+                                            
+            <li><span>
+                                                    <a href="http://ru.wiki.mongodb.org/display/DOCS/Developer+Zone">Для разработчика</a>
+                        </span></li>
+                                            
+            <li><span>
+                                                    <a href="http://ru.wiki.mongodb.org/display/DOCS/Developer+FAQ">Часто задаваемые вопросы разработчиков</a>
+                        </span></li>
+                                            
+            <li><span>
+                                                    Соответсвие между&nbsp;SQL и Mongo
+                        </span></li>
+                </ol>
+ 
+    </div>
+  </div>
+
+  <div id="main-db" class="spread">
+    <div class="split">
+    
+                <ul id="user-control-panel">
+                                
+            <li class="first"><a href="http://ru.wiki.mongodb.org/login.action?os_destination=%2Fdisplay%2FDOCS%2FSQL%2Bto%2BMongo%2BMapping%2BChart">Вход</a></li>
+
+                                                        </ul>
+        <div>
+
+    
+    <div id="navigation" class="content-navigation view">
+        <fieldset class="hidden parameters">
+            <input type="hidden" id="pageId" value="8716963">
+        </fieldset>
+        <ul class="ajs-menu-bar">
+                                
+            <li class="normal ajs-menu-item">
+        <a id="add-menu-link" class="add trigger ajs-menu-title" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#"><span><span>Добавить</span></span></a>         <div class="ajs-drop-down hidden" hidden="" style="">
+                        <ul id="add-menu-link-page" class="section-page first">
+                                        <li>
+    
+    <a id="add-comment-menu-link" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart?showComments=true&showCommentArea=true#addcomment" class="add-comment">
+                   <span>Комментарий</span>            </a>
+</li>
+                            </ul>
+                    </div>
+    </li>
+                    
+            <li class="normal ajs-menu-item">
+        <a id="action-menu-link" class="action trigger ajs-menu-title" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#"><span><span>Инструменты</span></span></a>         <div class="ajs-drop-down hidden" style="margin: 0px; right: 0px; left: auto; " hidden="">
+                        <ul id="action-menu-link-primary" class="section-primary first">
+                                        <li>
+    
+    <a id="view-attachments-link" href="http://ru.wiki.mongodb.org/pages/viewpageattachments.action?pageId=8716963" class="action-view-attachments" accesskey="a">
+                   <span><u>П</u>риложения (0)</span>            </a>
+</li>
+                                        <li>
+    
+    <a id="action-view-history-link" href="http://ru.wiki.mongodb.org/pages/viewpreviousversions.action?pageId=8716963" class="action-view-history">
+                   <span>История страницы</span>            </a>
+</li>
+                            </ul>
+                        <ul id="action-menu-link-secondary" class="section-secondary">
+                                        <li>
+    
+    <a id="view-page-info-link" href="http://ru.wiki.mongodb.org/pages/viewinfo.action?pageId=8716963" class="action-view-info" accesskey="i">
+                   <span><u>И</u>нформация</span>            </a>
+</li>
+                                        <li>
+    
+    <a id="action-view-source-link" href="http://ru.wiki.mongodb.org/pages/viewpagesrc.action?pageId=8716963" class="action-view-source popup-link">
+                   <span>Посмотреть&nbsp;структуру&nbsp;Wiki</span>            </a>
+</li>
+                                        <li>
+    
+    <a href="http://ru.wiki.mongodb.org/spaces/flyingpdf/pdfpageexport.action?pageId=8716963&atl_token=49Xk1BBaID" class="">
+                   <span>Экспорт в PDF</span>            </a>
+</li>
+                                        <li>
+    
+    <a id="action-export-word-link" href="http://ru.wiki.mongodb.org/exportword?pageId=8716963" class="action-export-word">
+                   <span>Экспорт в Word</span>            </a>
+</li>
+                            </ul>
+                    </div>
+    </li>
+            </ul>
+    </div>
+
+    </div>
+    <h1 id="title-heading" class="pagetitle">
+                            
+		<span id="title-text">
+					            <a href="./SQL to Mongo Mapping Chart - MongoDB_files/SQL to Mongo Mapping Chart - MongoDB.htm">Соответсвие между&nbsp;SQL и Mongo</a>
+    				</span>
+    </h1>
+
+    <!--
+    Root decorator: this is a layer of abstraction that Confluence doesn't need. It will be removed eventually.
+-->
+
+
+
+
+    
+    
+
+    
+    
+        
+    
+    
+                    
+    
+
+
+
+        
+<div id="content" class="page view">
+            
+        
+                        
+                                
+    
+        
+                    
+        
+                
+<style>
+.spacetree * ul{
+padding-left:0px;
+margin-left: 0px;
+}
+.spacetree * li{
+margin-left: 5px;
+padding-left:5px;
+}
+ 
+</style>
+ 
+<table cellspacing="2" cellpadding="5">
+<tbody><tr>
+<td valign="top" align="left" width="80%" class="pagecontent">
+<div class="wiki-content">
+<!-- wiki content -->
+            <p><style>
+div.spacetree {
+  display: none !important;
+}
+</style></p>
+
+<div class="table-wrap">
+<table class="confluenceTable"><tbody>
+<tr>
+<th class="confluenceTh"> MySQL исполняемый файл </th>
+<th class="confluenceTh">  Oracle исполняемый файл </th>
+<th class="confluenceTh">  Mongo исполняемый файл </th>
+</tr>
+<tr>
+<td class="confluenceTd"> <tt>mysqld</tt> <br class="atl-forced-newline"> </td>
+<td class="confluenceTd"> <tt>oracle</tt> <br class="atl-forced-newline"> </td>
+<td class="confluenceTd"> <a href="http://ru.wiki.mongodb.org/display/DOCS/Architecture+and+Components" title="Архитектура и компоненты"><tt>mongod</tt></a> <br class="atl-forced-newline"> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <tt>mysql</tt> <br class="atl-forced-newline"> </td>
+<td class="confluenceTd"> <tt>sqlplus</tt> <br class="atl-forced-newline"> </td>
+<td class="confluenceTd"> <tt>mongo</tt> <br class="atl-forced-newline"> </td>
+</tr>
+</tbody></table>
+</div>
+
+
+<div class="table-wrap">
+<table class="confluenceTable"><tbody>
+<tr>
+<th class="confluenceTh"> Термин MySQL </th>
+<th class="confluenceTh"> Термин Mongo </th>
+</tr>
+<tr>
+<td class="confluenceTd"> database </td>
+<td class="confluenceTd"> <a href="http://ru.wiki.mongodb.org/display/DOCS/Databases" title="Базы данных">database</a> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> таблица </td>
+<td class="confluenceTd"> <a href="http://ru.wiki.mongodb.org/display/DOCS/Collections" title="Коллекции">коллекция</a></td>
+</tr>
+<tr>
+<td class="confluenceTd"> индекс </td>
+<td class="confluenceTd"> <a href="http://ru.wiki.mongodb.org/display/DOCS/Indexes" title="Индексы">индекс</a> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> строка </td>
+<td class="confluenceTd"> <a href="http://bsonspec.org/">BSON</a> документ </td>
+</tr>
+<tr>
+<td class="confluenceTd"> колонка </td>
+<td class="confluenceTd"> BSON-поле </td>
+</tr>
+<tr>
+<td class="confluenceTd"> join </td>
+<td class="confluenceTd"> <a href="http://ru.wiki.mongodb.org/display/DOCS/Schema+Design" title="Дизайн схемы данных">embedding and linking</a> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> primary key </td>
+<td class="confluenceTd"> <a href="http://ru.wiki.mongodb.org/display/DOCS/Object+IDs" title="Тип Object ID">_id field</a> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> group by </td>
+<td class="confluenceTd"> <a href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Aggregation+Framework+Mapping+Chart" title="Соответствие между SQL и Mongo">aggregation</a> </td>
+</tr>
+</tbody></table>
+</div>
+
+
+<p>Запросы MongoDB представляют собой JSON (<a href="http://ru.wiki.mongodb.org/display/DOCS/BSON" title="BSON">BSON</a>) объекты.&nbsp; Следующая таблица описывает примеры синтаксиса обоих языков: SQL и языка запросов Mongo.&nbsp;</p>
+
+<p>Выражение запроса в MongoDB (и в других похожих вещах, таких как&nbsp;модели&nbsp;ключа индекса) представлено в виде JSON (BSON). Тем не менее,&nbsp;фактические&nbsp;глаголы&nbsp;(например "найти") сделаны как в обычном языке программирования;&nbsp;таким образом,&nbsp;точные формы&nbsp;этих глаголов&nbsp;различаются в зависимости от&nbsp;языка.&nbsp; Примеры ниже на Javascript и могут быть выполнены в&nbsp; <a href="http://ru.wiki.mongodb.org/display/DOCS/mongo+-+The+Interactive+Shell" title="mongo - Интерактивная консоль">mongo консоли</a>.</p>
+
+<div class="table-wrap">
+<table class="confluenceTable"><tbody>
+<tr>
+<th class="confluenceTh"> Термины SQL <br class="atl-forced-newline"> </th>
+<th class="confluenceTh"> Команды Mongo <br class="atl-forced-newline"> </th>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">CREATE TABLE USERS (a <span class="code-object">Number</span>, b <span class="code-object">Number</span>)</pre>
+</div></div> </td>
+<td class="confluenceTd"> implicit; can also be done <a href="http://ru.wiki.mongodb.org/display/DOCS/createCollection+Command" title=" команда createCollection">explicitly</a> with <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.createCollection(<span class="code-quote">"mycoll"</span>)</pre>
+</div></div></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">ALTER TABLE users ADD ...</pre>
+</div></div> </td>
+<td class="confluenceTd"> <a href="http://ru.wiki.mongodb.org/display/DOCS/Tutorial" title="Учебник ( шаг за шагом )">implicit</a> </td>
+</tr>
+<tr>
+<th class="confluenceTh">&nbsp;</th>
+<th class="confluenceTh">&nbsp;</th>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">INSERT INTO USERS VALUES(3,5)</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.insert({a:3,b:5})</pre>
+</div></div> </td>
+</tr>
+<tr>
+<th class="confluenceTh">&nbsp;</th>
+<th class="confluenceTh">&nbsp;</th>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT a,b FROM users</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.find({}, {a:1,b:1})</pre>
+</div></div> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT * FROM users</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.find()</pre>
+</div></div> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT * FROM users WHERE age=33</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.find({age:33})</pre>
+</div></div> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT a,b FROM users WHERE age=33</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.find({age:33}, {a:1,b:1})</pre>
+</div></div> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT * FROM users WHERE age=33 ORDER BY name</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.find({age:33}).sort({name:1})</pre>
+</div></div> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT * FROM users WHERE age&gt;33</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.find({age:{$gt:33}})</pre>
+</div></div> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT * FROM users WHERE age!=33</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.find({age:{$ne:33}})</pre>
+</div></div> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT * FROM users WHERE name LIKE <span class="code-quote">"%Joe%"</span></pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.find({name:/Joe/})</pre>
+</div></div> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT * FROM users WHERE name LIKE <span class="code-quote">"Joe%"</span></pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.find({name:/^Joe/})</pre>
+</div></div> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT * FROM users WHERE age&gt;33 AND age&lt;=40</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.find({'age':{$gt:33,$lte:40}})</pre>
+</div></div> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT * FROM users ORDER BY name DESC</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.find().sort({name:-1})</pre>
+</div></div> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT * FROM users WHERE a=1 and b='q'</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.find({a:1,b:'q'})</pre>
+</div></div> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT * FROM users LIMIT 10 SKIP 20</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.find().limit(10).skip(20)</pre>
+</div></div> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT * FROM users WHERE a=1 or b=2</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.find( { $or : [ { a : 1 } , { b : 2 } ] } )</pre>
+</div></div> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT * FROM users LIMIT 1</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.findOne()</pre>
+</div></div> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT order_id FROM orders o, order_line_items li WHERE li.order_id=o.order_id AND li.sku=12345</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.orders.find({<span class="code-quote">"items.sku"</span>:12345},{_id:1})</pre>
+</div></div></td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT customer.name FROM customers,orders WHERE orders.id=<span class="code-quote">"q179"</span> AND orders.custid=customer.id
+</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java"><span class="code-keyword">var</span> o = db.orders.findOne({_id:<span class="code-quote">"q179"</span>});
+<span class="code-keyword">var</span> name = db.customers.findOne({_id:o.custid})
+</pre>
+</div></div> </td>
+</tr>
+<tr>
+<th class="confluenceTh">&nbsp;</th>
+<th class="confluenceTh">&nbsp;</th>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT DISTINCT last_name FROM users</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.distinct('last_name')</pre>
+</div></div> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT COUNT(*y)
+FROM users</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.count()</pre>
+</div></div> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT COUNT(*y)
+FROM users where AGE &gt; 30</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.find({age: {'$gt': 30}}).count()</pre>
+</div></div> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">SELECT COUNT(AGE) from users</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.find({age: {'$exists': <span class="code-keyword">true</span>}}).count()</pre>
+</div></div> </td>
+</tr>
+<tr>
+<th class="confluenceTh">&nbsp;</th>
+<th class="confluenceTh">&nbsp;</th>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">CREATE INDEX myindexname ON users(name)
+</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.ensureIndex({name:1})</pre>
+</div></div> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">CREATE INDEX myindexname ON users(name,ts DESC)
+</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.ensureIndex({name:1,ts:-1})</pre>
+</div></div> </td>
+</tr>
+<tr>
+<th class="confluenceTh">&nbsp;</th>
+<th class="confluenceTh">&nbsp;</th>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">EXPLAIN SELECT * FROM users WHERE z=3</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.find({z:3}).explain()</pre>
+</div></div> </td>
+</tr>
+<tr>
+<th class="confluenceTh">&nbsp;</th>
+<th class="confluenceTh">&nbsp;</th>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">UPDATE users SET a=1 WHERE b='q'</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.update({b:'q'}, {$set:{a:1}}, <span class="code-keyword">false</span>, <span class="code-keyword">true</span>)</pre>
+</div></div> </td>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">UPDATE users SET a=a+2 WHERE b='q'</pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.update({b:'q'}, {$inc:{a:2}}, <span class="code-keyword">false</span>, <span class="code-keyword">true</span>)</pre>
+</div></div> </td>
+</tr>
+<tr>
+<th class="confluenceTh">&nbsp;</th>
+<th class="confluenceTh">&nbsp;</th>
+</tr>
+<tr>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">DELETE FROM users WHERE z=<span class="code-quote">"abc"</span></pre>
+</div></div> </td>
+<td class="confluenceTd"> <div class="code panel" style="border-width: 1px;"><div class="codeContent panelContent">
+<pre class="code-java">db.users.remove({z:'abc'});</pre>
+</div></div> </td>
+</tr>
+</tbody></table>
+</div>
+
+
+<p><a href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Aggregation+Framework+Mapping+Chart" title="Соответствие между SQL и Mongo">Другие примеры, в частности использование агрегигации, смотрите здесь</a></p>
+
+<h3><a name="SQLtoMongoMappingChart-SeeAlso"></a>Смотрите также </h3>
+
+<p><iframe id="docframe-sqlToMongo" src="./SQL to Mongo Mapping Chart - MongoDB_files/sqlToMongo.htm" width="500" height="17" frameborder="0" scrolling="no" margin="0" padding="0"></iframe><a name="sqlToMongo" margin="0" padding="0"></a>
+</p>
+
+<ul>
+	<li> <a href="http://ru.wiki.mongodb.org/display/DOCS/Manual" title="Руководство">Страницы руководства MongoDB</a> хороший способ узнать больше</li>
+	<li><a href="http://ru.wiki.mongodb.org/pages/viewpage.action?pageId=21270051" title="SQL к Shell к C++">SQL к Shell к C++</a></li>
+</ul>
+</div>
+</td>
+<td valign="top" align="left" width="20%" class="noprint">
+<div class="spacetree">
+                                            
+    
+
+<div class="plugin_pagetree">
+
+        
+        
+    <ul class="plugin_pagetree_children_list plugin_pagetree_children_list_noleftspace">
+        <div class="plugin_pagetree_children" id="children131081-0"><ul class="plugin_pagetree_children_list" id="child_ul131081-0">
+            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <img border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_square.gif">
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan18907460-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="Введение">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/Introduction">Введение</a>
+        </span>            </div>
+
+        <div id="children18907460-0" class="plugin_pagetree_children_container">
+                    <ul class="plugin_pagetree_children_list" id="child_ul18907460-0"></ul>
+            </div>
+    </li>
+            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <img border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_square.gif">
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan590523-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="Быстрый старт">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/Quickstart">Быстрый старт</a>
+        </span>            </div>
+
+        <div id="children590523-0" class="plugin_pagetree_children_container">
+                    <ul class="plugin_pagetree_children_list" id="child_ul590523-0"></ul>
+            </div>
+    </li>
+            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <a class="plugin_pagetree_childtoggle" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#">
+                                    <img id="plusminus132305-0" border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_plus.gif">
+                            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan132305-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="Загрузки">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/Downloads">Загрузки</a>
+        </span>            </div>
+
+        <div id="children132305-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <a class="plugin_pagetree_childtoggle" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#">
+                                    <img id="plusminus590729-0" border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_plus.gif">
+                            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan590729-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="Драйверы">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/Drivers">Драйверы</a>
+        </span>            </div>
+
+        <div id="children590729-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <a class="plugin_pagetree_childtoggle" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#">
+                                    <img id="plusminus1048712-0" border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_minus.gif">
+                            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan1048712-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="Для разработчика">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/Developer+Zone">Для разработчика</a>
+        </span>            </div>
+
+        <div id="children1048712-0" class="plugin_pagetree_children_container">
+                                                        <ul class="plugin_pagetree_children_list" id="child_ul1048712-0">
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <img border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_square.gif">
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan18448636-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="cookbook.mongodb.org">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/cookbook.mongodb.org">cookbook.mongodb.org</a>
+        </span>            </div>
+
+        <div id="children18448636-0" class="plugin_pagetree_children_container">
+                    <ul class="plugin_pagetree_children_list" id="child_ul18448636-0"></ul>
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <img border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_square.gif">
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan1475705-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="Учебник ( шаг за шагом )">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/Tutorial">Учебник ( шаг за шагом )</a>
+        </span>            </div>
+
+        <div id="children1475705-0" class="plugin_pagetree_children_container">
+                    <ul class="plugin_pagetree_children_list" id="child_ul1475705-0"></ul>
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <a class="plugin_pagetree_childtoggle" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#">
+                                    <img id="plusminus1475637-0" border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_plus.gif">
+                            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan1475637-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="Руководство">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/Manual">Руководство</a>
+        </span>            </div>
+
+        <div id="children1475637-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <a class="plugin_pagetree_childtoggle" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#">
+                                    <img id="plusminus131685-0" border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_plus.gif">
+                            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan131685-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="mongo - Интерактивная консоль">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/mongo+-+The+Interactive+Shell">mongo - Интерактивная консоль</a>
+        </span>            </div>
+
+        <div id="children131685-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <a class="plugin_pagetree_childtoggle" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#">
+                                    <img id="plusminus1475690-0" border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_minus.gif">
+                            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan1475690-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="Часто задаваемые вопросы разработчиков">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/Developer+FAQ">Часто задаваемые вопросы разработчиков</a>
+        </span>            </div>
+
+        <div id="children1475690-0" class="plugin_pagetree_children_container">
+                                                        <ul class="plugin_pagetree_children_list" id="child_ul1475690-0">
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <img border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_square.gif">
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan7209106-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="Стоит ли мне волноваться об SQL-инъекциях?">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/Do+I+Have+to+Worry+About+SQL+Injection">Стоит ли мне волноваться об SQL-инъекциях?</a>
+        </span>            </div>
+
+        <div id="children7209106-0" class="plugin_pagetree_children_container">
+                    <ul class="plugin_pagetree_children_list" id="child_ul7209106-0"></ul>
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <img border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_square.gif">
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan7209296-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="Как работает параллельность">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/How+does+concurrency+work">Как работает параллельность</a>
+        </span>            </div>
+
+        <div id="children7209296-0" class="plugin_pagetree_children_container">
+                    <ul class="plugin_pagetree_children_list" id="child_ul7209296-0"></ul>
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <img border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_square.gif">
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan40305896-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="What is a Name Space">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/What+is+a+Name+Space">What is a Name Space</a>
+        </span>            </div>
+
+        <div id="children40305896-0" class="plugin_pagetree_children_container">
+                    <ul class="plugin_pagetree_children_list" id="child_ul40305896-0"></ul>
+            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <a class="plugin_pagetree_childtoggle" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#">
+                                    <img id="plusminus8716963-0" border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_plus.gif">
+                            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan8716963-0" style="font-weight: bold; ">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="Соответсвие между SQL и Mongo">
+                         <a href="./SQL to Mongo Mapping Chart - MongoDB_files/SQL to Mongo Mapping Chart - MongoDB.htm">Соответсвие между&nbsp;SQL и Mongo</a>
+        </span>            </div>
+
+        <div id="children8716963-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+                                            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <img border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_square.gif">
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan3047986-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="Какой порядок сравнения BSON типов">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/What+is+the+Compare+Order+for+BSON+Types">Какой порядок сравнения BSON типов</a>
+        </span>            </div>
+
+        <div id="children3047986-0" class="plugin_pagetree_children_container">
+                    <ul class="plugin_pagetree_children_list" id="child_ul3047986-0"></ul>
+            </div>
+    </li>
+                                        </ul>
+                                        </div>
+    </li>
+                                        </ul>
+                                        </div>
+    </li>
+            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <a class="plugin_pagetree_childtoggle" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#">
+                                    <img id="plusminus1048714-0" border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_plus.gif">
+                            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan1048714-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="Для администратора">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/Admin+Zone">Для администратора</a>
+        </span>            </div>
+
+        <div id="children1048714-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <img border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_square.gif">
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan590845-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="Проекты, работающие с Mongo">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/Production+Deployments">Проекты, работающие с Mongo</a>
+        </span>            </div>
+
+        <div id="children590845-0" class="plugin_pagetree_children_container">
+                    <ul class="plugin_pagetree_children_list" id="child_ul590845-0"></ul>
+            </div>
+    </li>
+            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <a class="plugin_pagetree_childtoggle" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#">
+                                    <img id="plusminus1048716-0" border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_plus.gif">
+                            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan1048716-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="Авторам">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/Contributors">Авторам</a>
+        </span>            </div>
+
+        <div id="children1048716-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <a class="plugin_pagetree_childtoggle" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#">
+                                    <img id="plusminus132286-0" border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_plus.gif">
+                            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan132286-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="Сообщество">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/Community">Сообщество</a>
+        </span>            </div>
+
+        <div id="children132286-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <a class="plugin_pagetree_childtoggle" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#">
+                                    <img id="plusminus1048718-0" border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_plus.gif">
+                            </a>
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan1048718-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="О продукте">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/About">О продукте</a>
+        </span>            </div>
+
+        <div id="children1048718-0" class="plugin_pagetree_children_container">
+                                                            </div>
+    </li>
+            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <img border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_square.gif">
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan1475385-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="На других языках">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/International+Docs">На других языках</a>
+        </span>            </div>
+
+        <div id="children1475385-0" class="plugin_pagetree_children_container">
+                    <ul class="plugin_pagetree_children_list" id="child_ul1475385-0"></ul>
+            </div>
+    </li>
+            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <img border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_square.gif">
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan8716967-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="Книги">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/Books">Книги</a>
+        </span>            </div>
+
+        <div id="children8716967-0" class="plugin_pagetree_children_container">
+                    <ul class="plugin_pagetree_children_list" id="child_ul8716967-0"></ul>
+            </div>
+    </li>
+            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <img border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_square.gif">
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan20578330-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="Слайды и Видео">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/Slides+and+Video">Слайды и Видео</a>
+        </span>            </div>
+
+        <div id="children20578330-0" class="plugin_pagetree_children_container">
+                    <ul class="plugin_pagetree_children_list" id="child_ul20578330-0"></ul>
+            </div>
+    </li>
+            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <img border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_square.gif">
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan132848-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="Индекс документов">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/Doc+Index">Индекс документов</a>
+        </span>            </div>
+
+        <div id="children132848-0" class="plugin_pagetree_children_container">
+                    <ul class="plugin_pagetree_children_list" id="child_ul132848-0"></ul>
+            </div>
+    </li>
+            <li>
+    <div class="plugin_pagetree_childtoggle_container">
+                    <img border="0" src="./SQL to Mongo Mapping Chart - MongoDB_files/tree_square.gif">
+            </div>
+    <div class="plugin_pagetree_children_content">
+                    <span class="plugin_pagetree_children_span" id="childrenspan27853183-0">                 <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="Предупреждения">
+                         <a href="http://ru.wiki.mongodb.org/display/DOCS/Alerts">Предупреждения</a>
+        </span>            </div>
+
+        <div id="children27853183-0" class="plugin_pagetree_children_container">
+                    <ul class="plugin_pagetree_children_list" id="child_ul27853183-0"></ul>
+            </div>
+    </li>
+    </ul>
+</div>
+    </ul>
+
+    <fieldset class="hidden">
+        <input type="hidden" name="treeId" value="">
+        <input type="hidden" name="treeRequestId" value="/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false">
+        <input type="hidden" name="treePageId" value="8716963">
+
+        <input type="hidden" name="noRoot" value="false">
+        <input type="hidden" name="rootPageId" value="131081">
+
+        <input type="hidden" name="rootPage" value="">
+        <input type="hidden" name="startDepth" value="0">
+        <input type="hidden" name="spaceKey" value="DOCS">
+
+        <input type="hidden" name="i18n-pagetree.loading" value="Loading...">
+        <input type="hidden" name="loginUrl" value="/login.action?os_destination=%2Fdisplay%2FDOCS%2FSQL%2Bto%2BMongo%2BMapping%2BChart">
+
+                <fieldset class="hidden">
+                                                <input type="hidden" name="ancestorId" value="1475690">
+                                    <input type="hidden" name="ancestorId" value="1048712">
+                                    <input type="hidden" name="ancestorId" value="131081">
+                                    </fieldset>
+    </fieldset>
+</div>
+
+
+
+<p><a href="http://www.twitter.com/mongodb">Follow @mongodb</a> </p>
+                        <!-- SQL to Mongo Mapping Chart -->
+</div>
+</td>
+</tr>
+</tbody></table>
+       
+       <hr class="grey">
+       
+       <div class="page-metadata">
+    <ul>
+                <li class="page-metadata-modification-info">
+                    Added by <a class="username:dwight url fn" href="http://ru.wiki.mongodb.org/display/~dwight">Dwight Merriman</a>, last edited by <a class="username:dwight url fn" href="http://ru.wiki.mongodb.org/display/~dwight">Dwight Merriman</a> on Feb 10, 2012
+                                        <span class="noprint">&nbsp;(<a href="http://ru.wiki.mongodb.org/pages/diffpages.action?pageId=8716963&originalId=31653915">view change</a>)</span>
+                            </li>
+            </ul>
+      <div id="versionComment" class="noteMacro" style="display:none; padding: 5px;">
+      <strong>Комментарий:</strong> <br>
+  </div>
+
+    <script>
+      var show = document.getElementById('show');
+      var hide = document.getElementById('hide');
+      var versionComment = document.getElementById('versionComment');
+
+      function showComment(){
+        show.style.display = 'none';
+        hide.style.display = 'inline';
+        versionComment.style.display = 'block';
+      }
+
+      function hideComment(){
+        show.style.display = 'inline';
+        hide.style.display = 'none';
+        versionComment.style.display = 'none';
+      }
+
+    </script>
+</div>                          
+                           
+       <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+         <rdf:Description
+    rdf:about="http://www.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart"
+    dc:identifier="http://www.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart"
+    dc:title="SQL to Mongo Mapping Chart"
+    trackback:ping="http://www.mongodb.org/rpc/trackback/8716963"/>
+</rdf:RDF>
+-->
+       
+           
+    
+    
+    
+
+
+<fieldset class="hidden parameters">
+    <legend>Теги</legend>
+    <input type="hidden" id="editLabel" value="Edit">
+    <input type="hidden" id="addLabel" value="Add Labels">
+    <input type="hidden" id="domainName" value="http://www.mongodb.org">
+    <input type="hidden" id="pageId" value="8716963">
+    <input type="hidden" id="spaceKey" value="DOCS">
+</fieldset>
+
+<div id="labels-section" class="pageSection">
+    <div id="default-labels-header" class="section-header">
+        <h2 id="labels-section-title" class="section-title ">Теги</h2>
+            </div>
+
+    <div class="labels-editor">
+        <div id="labelsList">
+            <div id="label-16744450" class="confluence-label">
+    <a class="label" rel="nofollow" href="http://ru.wiki.mongodb.org/label/DOCS/cheat">cheat</a>    <span class="remove-label-caption">cheat</span>
+    <a class="remove-label" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#">Delete</a>
+</div>
+<div id="label-16744451" class="confluence-label">
+    <a class="label" rel="nofollow" href="http://ru.wiki.mongodb.org/label/DOCS/sheet">sheet</a>    <span class="remove-label-caption">sheet</span>
+    <a class="remove-label" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#">Delete</a>
+</div>
+<div id="label-16744452" class="confluence-label">
+    <a class="label" rel="nofollow" href="http://ru.wiki.mongodb.org/label/DOCS/cheatsheet">cheatsheet</a>    <span class="remove-label-caption">cheatsheet</span>
+    <a class="remove-label" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#">Delete</a>
+</div>
+<div id="label-16744453" class="confluence-label">
+    <a class="label" rel="nofollow" href="http://ru.wiki.mongodb.org/label/DOCS/quickref">quickref</a>    <span class="remove-label-caption">quickref</span>
+    <a class="remove-label" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#">Delete</a>
+</div>
+<div id="label-16744454" class="confluence-label">
+    <a class="label" rel="nofollow" href="http://ru.wiki.mongodb.org/label/DOCS/quick">quick</a>    <span class="remove-label-caption">quick</span>
+    <a class="remove-label" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#">Delete</a>
+</div>
+<div id="label-16744455" class="confluence-label">
+    <a class="label" rel="nofollow" href="http://ru.wiki.mongodb.org/label/DOCS/ref">ref</a>    <span class="remove-label-caption">ref</span>
+    <a class="remove-label" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#">Delete</a>
+</div>
+        </div>
+
+        <span class="errorMessage error" id="errorSpan"></span>
+        <form method="GET" action="" id="add-labels-form">
+            <div id="labelInputSpan" class="labels-input">
+                <div id="labelOperationErrorContainer" class="hidden">
+                    <span class="error"><span class="errorMessage" id="labelOperationErrorMessage"></span></span>
+                </div>
+
+                <div class="caption">Введите теги для этой страницы</div>
+
+                <input autocomplete="off" id="labelsString" name="labelsString" value="" size="40">
+                <input type="submit" class="add-labels" value="Add">
+                <input type="submit" class="hide-labels-editor" value="Done">
+                <div id="waitImageAndStatus">
+                    <img class="waiting" alt="Пожалуйста, подождите" src="./SQL to Mongo Mapping Chart - MongoDB_files/wait.gif">&nbsp;
+                    <span id="labelOperationStatus" class="smalltext"></span>
+                </div>
+                <div class="auto_complete" id="labelsAutocompleteList" style="display: none; "></div>
+                <div class="labels-tip">
+                    <div id="suggestedLabelsSpan"></div>
+                    Ищите по тегам? Просто начните печатать
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+       
+                   <div id="children-section" class="pageSection">
+        
+        <div class="section-header ">
+            <h2 id="children-section-title" class="section-title">
+                <a name="children">Дочерних элементов (1)</a>
+            </h2>
+            <span class="noprint">
+                &nbsp;
+                                    <a id="hide-children-link" class="grey" href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart?showChildren=false#children">Скрыть дочерние элементы</a> &nbsp;|&nbsp; <a class="grey" href="http://ru.wiki.mongodb.org/pages/listpages-dirview.action?key=DOCS&openId=8716963#selectedPageInHierarchy">Смотреть в иерархии</a>
+                            </span>
+        </div>
+                    <div id="page-children" class="pageSectionBody">
+                                                     <img src="./SQL to Mongo Mapping Chart - MongoDB_files/docs_16.gif" height="16" width="16" border="0" align="absmiddle" title="SQL к Shell к C++">
+                         <a href="http://ru.wiki.mongodb.org/pages/viewpage.action?pageId=21270051">SQL to Shell to C++</a>
+                             <br>
+                            </div>
+                </div>
+           
+           
+
+<!--
+    Root decorator: this is a layer of abstraction that Confluence doesn't need. It will be removed eventually.
+-->
+
+
+
+
+    
+        
+    
+    
+
+<fieldset class="parameters hidden">
+
+    <input type="hidden" id="deleteCommentConfirmMessage" value="Are you sure you want to remove the comment?">
+    <input type="hidden" id="collapseTooltip" value="Click to toggle the display of this comment.">
+</fieldset>
+
+
+
+
+
+<div id="comments-section" class="pageSection">
+    
+            <div class="section-header">
+            <ul id="comment-top-links" class="global-comment-actions">
+                <li id="comments-expand-collapse">
+                    <a href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#" id="comments-collapse">Свернуть все</a> <span id="collapse-wait" class="hidden">Сворачивание...</span> <span id="expand-wait" class="hidden">Развертывание...</span> <a href="http://ru.wiki.mongodb.org/display/DOCS/SQL+to+Mongo+Mapping+Chart#" class="hidden" id="comments-expand">Развернуть все</a>
+                </li>
+            </ul>
+        </div>
+            <!-- added by Kristina 1/7/10 -->
+<p>
+<b><a style="color: #375FA0;" href="http://groups.google.com/group/mongodb-user">Просим Вас присылать вопросы на форум пользователей</a>.</b> Добавляйте сюда только полезные подсказки и дельные комментарии
+</p>
+
+            <!-- end -->
+<div id="disqus_thread"><div><img width="71" height="17" alt="DISQUS" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEcAAAARCAYAAAH4YIFjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABwdJREFUeNpi/P//PwMhwAIiGBkZGeK6V8JVh9rqdfrc0ixnEDb+wPD2rAAjMSYBBBBRisDWwKxCthIE/q8Q+A8yhCiTAAIIrCi+ZxVMZSAQr19UGs4IMxWd/X8Rw3/GOKDhW43fgzwF1hX7n5EJ2dSp2QFNUKcZwJ31/78CkvPBGkGGMXidSUTWCxBAxAUAEQAcJzCvIXsDBPwsNBU2nbj+AMpdsFA8PAHsLZj3QC5D9hrIAEtN+RMwAzRkxcB0iK3eQ6iQIRAnoMTE//8CyHwmWHQdv/7QAiZ44/ErMP383acsqNB5iMnPlsFdsUZ6IU3CCCCA4AYBw8kBJgj06gGkmHJAFgPyQV4ExeQEoNgHJHUBQMoAWRzoerBeYHgeQOJ/APIvQPkNUP4EuIdADBAGBRMQOABxQcakdSipHZldNGvL2zWHL8kD1d0HieVN33QYqnc/EAfULNwJVw8KTniQwvjAdPz/SEwKmL1KfC5QjwEQr4e5AyVdA3P4ASCe8O3nb1whmtib6r3IXlfpATBEFbpWH9ygJSdmBtXrOHPbyZWPXn1AqOZRwDSBS+YHo82SOQwiZnYMoS+EGC42nGdYzBiAnKpgGAbeA3ECkjwYQNnzH758///6o5cgofVIagy+/vgFF//y/ecHJLn1/18AA+/teZBcPZL4eSTxBJg7AAKIaomRmpkeV2IG5UcDpMSsAM2zF4BiG9DUFaCLQxPwBWCC/QBkg/QqoCVuEN4ASuDIaWc/DIMSItBxH0GCrkaqCVBxWO4BJWBQcK/PmrL+I1S8H0i9h4mjFfX7GTRyIdEuHzIfZtb/Zdw3oGyQnvP/d9pNgRc+MLCwJMxxWk7AI6Ar+YCWVSLLyYkJzIYlZqC6RGBhbg/lFwDlQHoDgfgALLfhjY8/X9XhpWPs/wWM7odyMBwDylU8nOzyILYIH3cZslxBgM0cKHM+MOTAGCZnri7XCdS7ASgGLsc/fPlug9cxlrO/wUvYxYwJwCgLwHAMcrVlqCJ9BVlchJ+7EhRyQPwAyGaAFnhgsOPMzUhQroLVAU76yp/gGp/vtQbTr45pwMWOp1oDQ6QQiGEi6+EJGLmah0YJQ6CVtu3ivecKYHIpE9b8BPqcDSnawHSSu8m3eTvPyAHlzsPkDl25/wXMYAOq+XgtBFwIfn/GwCAOSq8HYCGCsNh8+hvksgYZIJchDkjljAKoHAKVJ6ByBbnmA5XESOL1oFIZSc9/cJkC1IukPuH/z/cw8fswdwyqcgYgwAaVYwYbQEnDSI1LbGABEDcCC1lYS4yhfO42n+fvPm9GKsAZkfJDA7RcwwYmQM1CbpUUADU3AB3AjxJ7wFwAFGsAqp2A0mBDahww8Gv4Mvrf2AKXWyMzgeHbk3wwh5X/DGPkR1OoHlCmn49cGCABkL8SgZn8ANbAQQaV4ZBK6yGwgbDr3G2GNx+/gkqShMTe1V///vsnA/KYjoKECjBwMPQCW0EngOrNQWxbHQWGFA8zBlAj5eztpwwbjl9lyPG1DFOUEAIFDqxJB6ksoC1ZN2NVsDm7zt4GNUhBgdUPrXwckWtQOJB0VQE2XRF8UQt9hodrIGw+FaDcWVjAwAshhsD7kAbPO2Dr78ZEBoZfHxQYHNYbwEogvIGjKSfOiNysBpaEL/acv8MODBhuUX7u00BhVVx6DZWlxHcDAxQEDl95AMZQAGqHLlSSFIanAnZWll0/f/8Bs2OcDB+5GavJVyGZtevsrYdL9p2XQ6rZGcnKI54nZRj2uoMCAVr4K8JkQAKgJsdEYN12AbmYYSGqYGJk/NC8bO91WHKUFRXgwace6ElDIF4PjHWHc3eeMZy98xSU8mB1mwE0FSQCU8ECZiZGVpi+yw9eLIfVlUyMjIf+/f/Pu/bIlTtIdSX5hauo+RagxxMZfr2fwHB3IT/Dy4MMDI/BzTABaP2aAGzmgPpN4gQDB1pmgIA+EAfcfvoGXl/mB1hXFuBxCLDs6oc26kBJZiIoxShLCqs9e/tp+vdfv8ENB08Tdf9FwHKsMtxxTfvK/SGgbHfx3vNyoL2g7DjR30r74vqjV2yA6lXgbnI2WtoH4yhEfGF4sAISSTcm9wOzDcidoE6lPTBLwRuyDMoJ5+DZagnLJIb/f3mh5edGcKoRs+5neHUUUgZxiIrhrK2wFchc7KwMmsByANjiAZUfoGzhCEpJIDlQowOYffqRC2RQS+f1x68HNx6/ygcqY9A7RMZAc5LcTS/zcLLZwcwB1evAzs/8pfsvwDu9yOplgRECzF4M8a7Gryw05NRB+sDtiC/3HjKcKeaDpgAEADVmNIDlsX4DqFPmCOvvMNxdkAAuX95dQFUPKnv06kEBmQgNOLpV5QbQpAsrcz4QUC+AVJsgqxcgoNcBqQy5QIIdONUDALcn6c0dtMJ9AAAAAElFTkSuQmCC"><img width="16" height="11" alt="..." src="data:image/gif;base64,R0lGODlhEAALAPQAAP///z2LqeLt8dvp7u7090GNqz2LqV+fuJ/F1IW2ycrf51aatHWswaXJ14i4ys3h6FmctUCMqniuw+vz9eHs8fb5+meku+Tu8vT4+cfd5bbT3tbm7PH2+AAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCwAAACwAAAAAEAALAAAFLSAgjmRpnqSgCuLKAq5AEIM4zDVw03ve27ifDgfkEYe04kDIDC5zrtYKRa2WQgAh+QQJCwAAACwAAAAAEAALAAAFJGBhGAVgnqhpHIeRvsDawqns0qeN5+y967tYLyicBYE7EYkYAgAh+QQJCwAAACwAAAAAEAALAAAFNiAgjothLOOIJAkiGgxjpGKiKMkbz7SN6zIawJcDwIK9W/HISxGBzdHTuBNOmcJVCyoUlk7CEAAh+QQJCwAAACwAAAAAEAALAAAFNSAgjqQIRRFUAo3jNGIkSdHqPI8Tz3V55zuaDacDyIQ+YrBH+hWPzJFzOQQaeavWi7oqnVIhACH5BAkLAAAALAAAAAAQAAsAAAUyICCOZGme1rJY5kRRk7hI0mJSVUXJtF3iOl7tltsBZsNfUegjAY3I5sgFY55KqdX1GgIAIfkECQsAAAAsAAAAABAACwAABTcgII5kaZ4kcV2EqLJipmnZhWGXaOOitm2aXQ4g7P2Ct2ER4AMul00kj5g0Al8tADY2y6C+4FIIACH5BAkLAAAALAAAAAAQAAsAAAUvICCOZGme5ERRk6iy7qpyHCVStA3gNa/7txxwlwv2isSacYUc+l4tADQGQ1mvpBAAIfkECQsAAAAsAAAAABAACwAABS8gII5kaZ7kRFGTqLLuqnIcJVK0DeA1r/u3HHCXC/aKxJpxhRz6Xi0ANAZDWa+kEAA7AAAAAAAAAAAA" style="margin:0 0 3px 5px"></div><iframe id="dsq1" data-disqus-uid="1" allowtransparency="true" frameborder="0" role="application" style="width: 100%; border: none; overflow: hidden; display: none; " width="100%" src="about:blank"></iframe><iframe id="dsq3" data-disqus-uid="3" allowtransparency="true" frameborder="0" role="application" style="width: 100%; border: none; overflow: hidden; display: none; " width="100%" src="about:blank"></iframe></div><script type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/embed.js"></script><noscript>Включите JavaScript для просмотра &lt;a href="http://disqus.com/?ref_noscript=mongodb"&gt;комментариев на технологии Disqus.&lt;/a&gt;</noscript><a href="http://disqus.com/" class="dsq-brlink">Комментарии работают на технологии <span class="logo-disqus">Disqus</span></a>
+    
+    
+    
+                </div>
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+	var links = document.getElementsByTagName('a');
+	var query = '?';
+	for(var i = 0; i < links.length; i++) {
+	if(links[i].href.indexOf('#disqus_thread') >= 0) {
+		query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+	}
+	}
+	document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/mongodb/get_num_replies.js' + query + '"></' + 'script>');
+})();
+//]]>
+</script><script charset="utf-8" type="text/javascript" src="./SQL to Mongo Mapping Chart - MongoDB_files/get_num_replies.js"></script></div></div></div><div id="current-user-status-holder" class="current-user-latest-status" style="display: none; "></div><div id="content-hover-shadow" style="display: none; "><div class="tl"></div><div class="tr"></div><div class="l"></div><div class="r"></div><div class="bl"></div><div class="br"></div><div class="b"></div></div></body></html>

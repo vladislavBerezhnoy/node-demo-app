@@ -1,0 +1,10 @@
+
+
+
+@import url('/s/1627/3/143/_/styles/colors.css?spaceKey=DOCS');
+
+    /* Including stylesheet [ name='default-theme.css', location='classpath:/includes/css/default-theme.css' ] */
+
+            @import url('/s/1627/3/1/_/download/resources/com.atlassian.confluence.themes.default:styles/default-theme.css');
+    
+@import url('/s/1627/3/143/_/styles/custom.css?spaceKey=DOCS');
